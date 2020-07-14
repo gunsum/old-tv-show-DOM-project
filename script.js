@@ -26,16 +26,28 @@ number.innerText = episodeList[i].number
 
 
 "abcd".slice(-1) == "d"
-8:14
 "abcd".slice(-2) == "cd"
-8:14
 "abcd".slice(-3) == "bcd"
 S + season_number + E + episode_number
-*/
+
 let seasonum
 let seasonNumber = ("0"+seasonum).slice(-2)
 seasonNumber = document.createElement("season")
 seasonum.innerText = episodeList[i].season
+*/
+let season = episodeList[i].season
+let number = episodeList[i].number
+
+let seasonNumber = "S"+("0"+ season).slice(-2)
+//console.log(seasonNumber)
+let episodeNumber ="E"+("0"+ number).slice(-2)
+
+let finalNumber = seasonNumber + episodeNumber
+
+let finalNum = document.createElement("p")
+
+finalNum.innerText = finalNumber
+
 
 let name = document.createElement("p");
 name.innerText = episodeList[i].name
@@ -47,8 +59,8 @@ let summary = document.createElement("p")
 summary.innerText = episodeList[i].summary
 
 
-//cell.appendChild(number)
-cell.appendChild(season)
+cell.appendChild(finalNum)
+  
 cell.appendChild(name)
 cell.appendChild(image)
 cell.appendChild(summary)
