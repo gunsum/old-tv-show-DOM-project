@@ -1,4 +1,11 @@
 #root {
-  color: green;
+  display: flex;
+  flex-wrap: wrap;
+  
 }
 
+.episode {
+  background-color: ivory;
+  display: flex;
+  flex-direction: column;
+}
