@@ -12,7 +12,7 @@ function makePageForEpisodes(episodeList) {
 let table = document.createElement("table");
 rootElem.appendChild(table);
 
-//table.innerHTML = "<tr><td>hi</td></tr>"
+table.innerHTML = "<tr><td>hi</td></tr>"
 
 for(let i = 0; i < episodeList.length; i++){
 let row = document.createElement("tr")
